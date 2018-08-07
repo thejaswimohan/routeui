@@ -1,0 +1,44 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div ng-if="isSelected(2)" ng-controller="AddController">
+        <h2>Qualification Details</h2>
+
+        <form>
+
+            <div class="form-group">
+                <label for="qualifcation">Qualifcation: </label>
+                <input type="text" ng-required="true" class="form-control" ng-model="qualifcation">
+            </div>
+            <div class="form-group">
+                <label for="specification">Specification : </label>
+                <input type="text" ng-required="true" class="form-control" ng-model="specification">
+            </div>
+            <div class="form-group">
+                <label for="percentage">Percentage: </label>
+                <input type="text" class="form-control" ng-model="percentage" ng-required="true">
+            </div>
+            <div class="form-group">
+                <label for="university">University: </label>
+                <input type="text" class="form-control" ng-model="university" ng-required="true">
+            </div>
+            <div class="form-group">
+                <label for="yearpassedout">Year Passed Out: </label>
+                <input type="text" class="form-control" ng-model="yearpassedout" ng-required="true">
+            </div>
+
+
+            <button class="btn btn-primary" ng-click="savequalification()">
+                Save
+            </button>
+
+
+        </form>
+    </div>
+</body>
+</html>

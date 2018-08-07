@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div ng-if="isSelected(1)" ng-controller="AddController">
+        <h2>Personal Information</h2>
+
+        <form>
+
+            <div class="form-group">
+                <label for="name">Name : </label>
+                <input type="text" ng-required="true" class="form-control" ng-model="getuserdatas[0].Name">
+            </div>
+            <div class="form-group">
+                <label for="department">Department : </label>
+                <input type="text" ng-required="true" class="form-control" ng-model="getuserdatas[0].Department">
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary : </label>
+                <input type="number" class="form-control" ng-model="getuserdatas[0].Salary" ng-required="true">
+            </div>
+            
+
+            <button class="btn btn-primary" ng-click="saveprofile()">
+                Save
+            </button>
+
+
+        </form>
+    </div>
+</body>
+</html>

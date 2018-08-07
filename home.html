@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>List Of Employees</title>
+</head>
+<body>
+
+    <div class="container jumbotron" ng-controller="EmployeeController">
+
+        <h1 id="header">Employees Data Page</h1>
+        <form>
+
+
+            <grid-view></grid-view>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <popup-view></popup-view>
+            </div>
+
+        </form>
+    </div>
+    <script type="text/javascript">
+        $('#exampleModal').on('hidden.bs.modal', function () {
+            location.reload();
+        });
+    </script>
+</body>
+</html>

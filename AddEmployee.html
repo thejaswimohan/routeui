@@ -1,0 +1,34 @@
+﻿
+
+
+<div ng-controller="AddController">
+    <div class="container jumbotron">
+        <h2>Add Employee page</h2>
+        <div class="row">
+            <ul class="nav nav-pills">
+                <li ng-class="{'active' : isSelected(1)}">
+                    <a href="" ng-click="selTab(1)">Profile Information</a>
+                </li>
+                <li ng-class="{'active' : isSelected(2)}">
+                    <a href="" ng-click="selTab(2)">Qualification Details</a>
+                </li>
+                <li ng-class="{'active' : isSelected(3)}">
+                    <a href="" ng-click="selTab(3)">Communication Details</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div ng-if="isSelected(1)">
+
+        <add-emp></add-emp>
+    </div>
+    <div ng-if="isSelected(2)">
+
+        <qualification-Emp></qualification-Emp>
+    </div>
+    <div ng-if="isSelected(3)">
+
+        <communication-emp></communication-emp>
+    </div>
+</div>

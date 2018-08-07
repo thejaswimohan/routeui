@@ -1,0 +1,79 @@
+﻿
+
+#he {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+    li:last-child {
+        border-right: none;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover:not(.active) {
+            background-color: gray;
+        }
+        li a.active {
+            background-color: green;
+        }
+      
+
+    
+
+/*.active {
+    background-color: #4CAF50;
+}*/
+
+table, tr, th, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 5px;
+}
+
+table {
+    text-align: center;
+    width: 1000px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: lightgrey
+}
+
+.odd {
+    background-color: lightgrey
+}
+
+.even {
+    background-color: white
+}
+
+
+#header {
+    text-align: center;
+    color: #00a1ff;
+}
+
+#myInput {
+
+    right:50%;
+    height: 26px;
+    width: 145px;
+}

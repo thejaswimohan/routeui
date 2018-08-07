@@ -1,0 +1,24 @@
+﻿@{
+    Layout = Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<input type="text" align="right" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<table id="myTable">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th colspan="2">Action</th>
+    </tr>
+    <tr ng-repeat="user in users | orderBy : 'id'" ng-class-even="'even'" ng-class-odd="'odd'">
+        <td>{{user.Id}}</td>
+        <td>{{user.Name}}</td>
+        <td>{{user.Department}}</td>
+        <td>{{user.Salary}}</td>
+        <td><button ng-click="getuserdata(user.id)" type="button" class="btn btn-primary" data-toggle="modal">Update</button></td>
+        <td><button confirmed-click="deleteuser(user.id)" ng-confirm-click="Would you like to delete?" type="button" class="btn btn-danger">Delete</button></td>
+    </tr>
+</table>
+
+
